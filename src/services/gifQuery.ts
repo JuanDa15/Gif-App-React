@@ -1,5 +1,5 @@
-import { Gift } from "@interfaces/gift";
-import { ApiResponse } from "@interfaces/apiResponse";
+import { Gift } from "../interfaces/gift";
+import { ApiResponse } from "../interfaces/apiResponse";
 
 export default async function getGifts(
   category: string,

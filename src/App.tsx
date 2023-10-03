@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import SearchBar from '@components/Searchbar';
-import CategoryPreview from '@components/CategoryPreview';
+import SearchBar from './components/Searchbar';
+import CategoryPreview from './components/CategoryPreview';
 
 export default function App() {
   const [categories, setCategories] = useState<string[]>([

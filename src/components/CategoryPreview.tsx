@@ -1,6 +1,6 @@
 import GiftsList from "./GiftsList";
 import GiftsListSkeleton from "./GiftsListSkeleton";
-import useGifts from "@hooks/useGifts";
+import useGifts from "../hooks/useGifts";
 
 interface Props {
   category: string;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { Gift } from "@interfaces/gift"
-import getGifts from "@services/gifQuery"
+import { Gift } from "../interfaces/gift"
+import getGifts from "../services/gifQuery"
 
 export default function useGifts(
   category: string, 
