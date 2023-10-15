@@ -1,4 +1,5 @@
 import { Gift } from "../interfaces/gift"
+import GiftItem from "./GiftItem"
 
 interface Props {
   data: Gift[]
@@ -9,18 +10,15 @@ export default function GiftsList ({ data }: Props) {
     <>
       {
         (data.length > 0) && (
-          <ul className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <ul className="grid grid-cols-2 md:grid-cols-4 gap-4" data-testid="grid-with-data">
             {
               data.map((gif) => (
-                <div key={gif.id}>
-                  <img  
-                    className="h-auto max-w-full rounded-lg aspect-square" 
-                    src={gif.images.fixed_width.url} 
-                    width={gif.images.fixed_width.width}
-                    height={gif.images.fixed_width.height}
-                    loading='lazy'
-                  />
-                </div>
+                <GiftItem 
+                  key={gif.id} 
+                  url={gif.images.fixed_width.url} 
+                  width={gif.images.fixed_width.width}
+                  height={gif.images.fixed_width.height}
+                />
               ))
             }
           </ul>

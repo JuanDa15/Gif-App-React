@@ -1,6 +1,6 @@
 export default function GiftsListSkeleton() {
   return (
-    <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-pulse">
+    <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-pulse" data-testid="list-loading-skeleton">
       {
         ['','','',''].map((_, index) => (
           <div 

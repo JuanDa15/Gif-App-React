@@ -12,7 +12,7 @@ export default function CategoryPreview({
   const { gifts, loading} = useGifts(category, 4);
 
   return (
-    <section className="bg-gray-900 rounded-md p-4 mt-4 flex flex-col gap-4">
+    <section className="bg-gray-900 rounded-md p-4 mt-4 flex flex-col gap-4" data-testid="category">
       <h2 className="text-3xl font-medium">
         {'< '}
         <span className="text-purple-500">{category}</span>

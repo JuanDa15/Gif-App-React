@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <GiftItem /> should match with snapshot 1`] = `
+<div>
+  <li>
+    <img
+      class="h-auto max-w-full rounded-lg aspect-square"
+      height="300"
+      loading="lazy"
+      src="https://picsum.photos/200/300"
+      width="200"
+    />
+  </li>
+</div>
+`;

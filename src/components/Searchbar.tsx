@@ -3,7 +3,7 @@ import { HTMLAttributes, ChangeEventHandler, FormEventHandler } from 'react'
 import SearchIcon from "../icons/SearchIcon"
 
 interface Props extends HTMLAttributes<HTMLInputElement> {
-  onSearch?: (category: string) => void
+  onSearch: (category: string) => void
 } 
 
 export default function SearchBar({
@@ -42,6 +42,7 @@ export default function SearchBar({
       <button 
         type="submit"
         role="button"
+        data-testid="search-button"
         className="w-12 h-12 rounded-md bg-gray-900 hover:bg-purple-700 text-white grid place-items-center rounded-l-none transition-colors disabled:opacity-80"
         disabled={!search}
       >

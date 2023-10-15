@@ -3,15 +3,11 @@ import SearchBar from './components/Searchbar';
 import CategoryPreview from './components/CategoryPreview';
 
 export default function App() {
-  const [categories, setCategories] = useState<string[]>([
-    'dragon ball',
-    'pokemon',
-    'naruto',
-  ]);
+  const [categories, setCategories] = useState<string[]>([]);
 
   const onAddCategory = (category: string) => {
     if (categories.filter((item) => item === category).length > 0) return;
-    const newCategories = structuredClone(categories)
+    const newCategories = [...categories]
     newCategories.unshift(category)
     setCategories(newCategories);
   };
